@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Login</title>
+    
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Segoe UI', sans-serif;           
+            background: linear-gradient(135deg, #191c2a 0%, #192452 100%);
+            min-height: 100vh;                             
+            display: flex;                                 
+            align-items: center;                           
+            justify-content: center;                       
+        }
+
+       
+        .container{
+            background: rgba(255,255,255,0.95);           
+            backdrop-filter: blur(20px);                  
+            padding: 2rem;                                
+            border-radius: 20px;                               
+            max-width: 400px;                             
+            width: 90%;                                   
+            text-align: center;                           
+        }
+
+        .logo { 
+            width: 80px;                                   
+            height: 80px;                                   
+            background: linear-gradient(135deg, #191c2a 0%, #192452 100%);
+            border-radius: 50%;                             
+            margin: 0 auto 1rem;                           
+            display: flex;                                  
+            align-items: center;                            
+            justify-content: center;                                                          
+            font-size: 2rem;                                   
+        }
+
+        h1{
+            background: linear-gradient(135deg, #191c2a 0%, #192452 100%);
+            color:white;
+            font-size: 1.8rem;                                   
+            font-weight: 500;                                     
+            margin-bottom: 0.5rem;                                
+            letter-spacing: 1.1px;                                  
+        }
+
+
+        .subtítulo{
+            color: #666;                                          
+            font-size: 1rem;                                      
+            margin-bottom: 2rem;
+            font-weight: bold;                                 
+        }
+
+        input{
+            width: 100%;
+            padding: 1.2rem, 1rem, 1.2rem, 3.5rem;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        button{
+            width: 50%;                                    
+            padding: 1rem;                         
+            background: linear-gradient(135deg, #191c2a 0%, #192452 100%);
+            color: white;                                                                     
+            border-radius: 10px;                            
+            font-size: 1.1rem;                              
+            font-weight: 700;
+            cursor: pointer;                                                                                           
+            letter-spacing: 1px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="logo">⚔️</div>
+
+        <h1>SISTEMA SEGURO</h1>
+        <p class="subtítulo">Acesse com o seu login de usuário e senha</p>
+
+        <div class="input">
+            <input type="text" id="usuario" placeholder="👤 Usuário">
+        </div>
+        <div class="input">
+            <input type="password" id="senha" placeholder="🔒 Senha">
+        </div>
+        <button type="submit" class="button" id="login">ENTRAR</button>
+
+    </div>
+</body>
+</html>
